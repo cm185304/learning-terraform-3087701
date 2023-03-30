@@ -3,7 +3,7 @@ name: terraform-check
 on: [push, pull_request]
 
 jobs:
-  gitleaks:
+  terraform-check:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
