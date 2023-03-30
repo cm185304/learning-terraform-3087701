@@ -1,0 +1,12 @@
+name: terraform-check
+
+on: [push, pull_request]
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: terraform-check
+        uses: dflook/terraform-check@v1.29.1
